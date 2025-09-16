@@ -4,7 +4,7 @@ import './Skills.css';
 
 const skillCategories = [
     {
-        title: "Programming Languages",
+        title: "Programming & Scripting Languages",
         skills: ["Python", "Java", "JavaScript", "C/C++", "HTML5", "CSS3", "SQL", "Typescript", "Bash", "Powershell", "Solidity"]
     },
     {
