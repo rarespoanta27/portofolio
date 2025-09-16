@@ -1,0 +1,76 @@
+/* src/components/Certificates.css */
+
+#certificates {
+    padding-bottom: 6rem;
+    color: var(--color-text-primary);
+}
+
+#certificates .section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 4rem auto;
+}
+
+/* Wrapper-ul principal care primește stilul de glass-card */
+.certificates-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    /* Eliminăm padding-ul default pentru a controla perfect lista din interior */
+    padding: 0; 
+}
+
+.certificates-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-bottom: 1px solid var(--glass-border);
+    flex-wrap: wrap; /* Permite trecerea pe rândul următor pe mobil */
+    gap: var(--spacing-sm);
+    transition: background-color 0.3s ease;
+}
+
+.certificate-item:last-child {
+    border-bottom: none;
+}
+
+.certificate-item:hover {
+    background-color: var(--card-bg-hover);
+}
+
+.certificate-details {
+    flex-grow: 1;
+}
+
+.certificate-name {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--color-text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.certificate-provider {
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+}
+
+.certificate-link {
+    /* Stil mai mic și mai subtil pentru buton */
+    padding: 0.5rem 1.2rem;
+    font-size: 0.85rem;
+    flex-shrink: 0; /* Previne micșorarea butonului pe mobil */
+}
+
+/* Ajustări pentru mobil */
+@media(max-width: 768px) {
+    .certificate-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

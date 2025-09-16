@@ -15,10 +15,12 @@ const Hero = () => {
     const titles = [
         'Problem Solver',
         'Tech Enthusiast',
-        'Student',
-        'Web Developer',
+        'Full-Stack Developer',
         'AI Practitioner',
-        'Cloud Explorer'
+        'Cloud Explorer',
+        'Lifelong Learner',
+        'Data Architect in Training',
+        'Web Developer'
     ];
 
     // Typewriter effect
@@ -98,17 +100,17 @@ const Hero = () => {
                             </svg>
                         </button>
                         
-                        <button 
-                            onClick={() => scrollToSection('contact')}
-                            className="glass-button secondary large"
-                            aria-label="Get in touch"
-                        >
-                            <span>Get In Touch</span>
-                            <svg className="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                        </button>
+                        <a 
+    href="mailto:rarespoanta10@gmail.com"
+    className="glass-button secondary large"
+    aria-label="Get in touch via email"
+>
+    <span>Get In Touch</span>
+    <svg className="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+        <polyline points="22,6 12,13 2,6"></polyline>
+    </svg>
+</a>
                     </div>
                     
                     {/* Social Links have been moved out of here */}
