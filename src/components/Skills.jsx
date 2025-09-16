@@ -5,7 +5,7 @@ import './Skills.css';
 const skillCategories = [
     {
         title: "Programming & Scripting Languages",
-        skills: ["Python", "Java", "JavaScript", "C/C++", "HTML5", "CSS3", "SQL", "Typescript", "Bash", "Powershell", "Solidity"]
+        skills: ["Python", "Java", "JavaScript", "C/C++", "C#","HTML5", "CSS3", "SQL", "Typescript", "Bash", "Powershell", "Solidity"]
     },
     {
         title: "Frameworks & Libraries",
@@ -13,11 +13,11 @@ const skillCategories = [
     },
     {
         title: "Cloud & DevOps",
-        skills: ["AWS", "Google Cloud Platform (GCP)", "Docker/Kubernetes", "Git", "Virtual machines"]
+        skills: ["Linux(Red Hat/RHEL)","AWS", "Google Cloud Platform (GCP)", "Docker/Kubernetes", "Git", "Virtual machines"]
     },
     {
         title: "Databases & Technologies",
-        skills: ["MongoDB", "Stripe", "JWT", "OAuth"]
+        skills: ["MongoDB","PostgreSQL","Redis","Stripe", "JWT", "OAuth"]
     },
     {
         title: "Tools & Platforms",
