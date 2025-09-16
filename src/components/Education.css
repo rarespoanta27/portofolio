@@ -1,0 +1,83 @@
+/* src/components/Education.css (Varianta Îmbunătățită) */
+
+#education {
+    padding-bottom: 6rem;
+    color: var(--color-text-primary);
+}
+
+#education .section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+/* Wrapper-ul principal care devine un card de sticlă */
+.education-wrapper {
+    padding: var(--spacing-xl);
+}
+
+/* Lista/Cronologia din interior */
+.education-list {
+    max-width: 800px;
+    margin: 0 auto;
+    /* Linie verticală stilizată pentru tema întunecată */
+    border-left: 2px solid var(--glass-border);
+    padding-left: var(--spacing-xl);
+}
+
+.education-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    padding-bottom: var(--spacing-xl);
+}
+
+.education-item:last-child {
+    padding-bottom: 0;
+}
+
+/* Punctul de pe cronologie, acum stilizat cu efect de glow */
+.education-item::before {
+    content: '';
+    position: absolute;
+    left: calc(-1 * var(--spacing-xl) - 10px); /* Poziționare exact pe linia verticală */
+    top: 0.5rem;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--color-accent-glow);
+    border: 3px solid var(--color-dark-green);
+    box-shadow: 0 0 15px var(--color-accent-glow);
+}
+
+.education-item h3 {
+    font-family: var(--font-sans);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--color-text-primary);
+}
+
+.education-degree {
+    color: var(--color-text-secondary);
+}
+
+.education-year {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    min-width: 100px;
+    text-align: right;
+}
+
+/* Ajustări pentru mobil */
+@media(max-width: 768px) {
+    .education-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .education-year {
+        text-align: left;
+    }
+}

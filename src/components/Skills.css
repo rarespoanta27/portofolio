@@ -1,0 +1,75 @@
+/* src/components/Skills.css (Varianta Îmbunătățită) */
+
+#skills {
+    padding-bottom: 6rem;
+    /* Asigură că textul titlului este vizibil pe gradient */
+    color: var(--color-text-primary); 
+}
+
+#skills .section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+/* Noul wrapper care primește stilul de glass-card */
+.skills-wrapper {
+    padding: var(--spacing-xl); /* Spațiu interior generos */
+}
+
+/* Grilă pentru a aranja categoriile */
+.skills-container {
+    display: grid;
+    /* O singură coloană pe mobil */
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+}
+
+/* Pe ecrane mai mari, trecem la 2 coloane */
+@media (min-width: 768px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.skill-category h3 {
+    font-family: var(--font-sans);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--color-text-primary);
+    /* Linie subtilă sub titlu, pentru un look premium */
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+/* Stil îmbunătățit pentru tag-uri, similar cu butoanele */
+.skill-tag {
+    padding: 0.6rem 1.2rem;
+    font-family: var(--font-sans);
+    font-weight: 500;
+    border-radius: var(--radius-full); /* Colțuri complet rotunjite */
+    font-size: 0.9rem;
+    
+    /* Efect de sticlă reutilizat */
+    background: var(--glass-bg-dark);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: var(--color-text-secondary); /* Culoare mai subtilă */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    transform: translateY(-3px) scale(1.05);
+    background: var(--color-accent-glow);
+    color: var(--color-dark-green); /* Text închis la culoare pentru contrast */
+    border-color: transparent;
+    box-shadow: 0 0 20px rgba(52, 211, 153, 0.4); /* Efect de glow */
+}

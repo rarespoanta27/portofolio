@@ -1,0 +1,157 @@
+/* src/components/Hero.css (Varianta Corectată Finală) */
+
+.hero-section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-3xl) 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-container {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.greeting {
+    display: block;
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.hero-title .name-highlight {
+    font-family: var(--font-serif);
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    color: var(--color-text-primary);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+}
+
+.hero-subtitle {
+    font-family: var(--font-mono);
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    color: var(--color-accent-glow);
+    height: 2.5rem;
+    margin: var(--spacing-sm) 0 var(--spacing-md) 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursor {
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.hero-description {
+    max-width: 650px;
+    margin: 0 auto var(--spacing-lg) auto;
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+}
+
+.hero-description .highlight {
+    color: var(--color-text-primary);
+    font-weight: 500;
+}
+
+.hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-lg) var(--spacing-md); /* crește spațiul între butoane pe orizontală și verticală */
+    margin-bottom: var(--spacing-3xl); /* spațiu rezonabil sub grupul de butoane */
+}
+
+.glass-button.large {
+    padding: calc(var(--spacing-sm) + 3px) var(--spacing-lg);
+    font-size: 1rem;
+}
+
+.glass-button .icon {
+    margin-left: var(--spacing-xs);
+    transition: transform 0.3s ease;
+}
+
+.glass-button:hover .icon {
+    transform: translateY(2px);
+}
+
+/* Containerul pentru baza paginii */
+.hero-footer {
+    position: relative;
+    margin-top: var(--spacing-xxl);
+    margin-bottom: var(--spacing-xxl);
+    left: 0;
+    transform: none;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.hero-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+.social-link {
+    display: inline-block;
+    line-height: 0;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-text-secondary);
+    transition: all 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+    fill: var(--color-accent-green);
+    transform: scale(1.15) translateY(-2px);
+}
+
+.scroll-arrow-wrapper {
+    line-height: 0;
+}
+
+.scroll-arrow {
+    display: block;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+}
+
+.scroll-arrow svg {
+    width: 32px;
+    height: 32px;
+    stroke: var(--color-text-secondary);
+    transition: stroke 0.3s ease;
+}
+
+.scroll-arrow:hover svg {
+    stroke: var(--color-accent-green);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(10px);
+    }
+    60% {
+        transform: translateY(5px);
+    }
+}
