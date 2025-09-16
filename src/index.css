@@ -87,7 +87,7 @@ body {
     
     /* Gradient fixat și extins pentru scroll lung */
     background-attachment: fixed;
-    background-size: 100% 600vh; /* Gradient extins pentru scroll mai lung */
+    background-size: 100% 6000vh; /* Gradient extins pentru scroll mai lung */
     min-height: 100vh;
     position: relative;
     
