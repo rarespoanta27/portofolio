@@ -26,7 +26,7 @@ const projectsData = [
         description: 'EasyCars is a comprehensive car rental application designed to provide users with a seamless and user-friendly experience when browsing and renting cars. This platform allows users to view a wide range of available cars, add desired vehicles to their cart, and place rental orders with ease.',
         tags: ['React', 'Node.js','RESTful API','MySQL','JWT','ChakraUI', 'E-commerce'],
         liveUrl: '#',
-        githubUrl: 'https://github.com/rarespoanta27'
+        githubUrl: 'https://github.com/rarespoanta27/EasyCars'
     },
     {
         id: 4,
@@ -34,7 +34,7 @@ const projectsData = [
         description: 'This web application creates and manages invoices with secure authentication, dynamic PDF generation, and automated email delivery. ',
         tags: ['JavaScript', 'PDF Generation', 'Authentication'],
         liveUrl: '#',
-        githubUrl: 'https://github.com/rarespoanta27'
+        githubUrl: 'https://github.com/rarespoanta27/Invoice-Generator'
     },
         {
         id: 5,
@@ -42,7 +42,7 @@ const projectsData = [
         description: 'This mobile application simulates a projectile\'s trajectory based on user-provided input. ',
         tags: ['Android Studio', 'Java', 'Mobile App', 'Simulation'],
         liveUrl: '#',
-        githubUrl: 'https://github.com/rarespoanta27'
+        githubUrl: 'https://github.com/rarespoanta27/ProjectileSimulator'
     },
     {
         id: 6,
@@ -50,7 +50,7 @@ const projectsData = [
         description: 'This project is an interactive Rock, Paper, Scissors game built with React, featuring themes, confetti effects, and a custom cursor for an engaging user experience. ',
         tags: ['React','Java Script','CSS'],
         liveUrl: '#',
-        githubUrl: 'https://github.com/rarespoanta27'
+        githubUrl: 'https://github.com/rarespoanta27/Rock-paper-scissors-game'
     },
     {
         id: 7,
@@ -58,7 +58,7 @@ const projectsData = [
         description: 'A simple, interactive Inventory Management System built with TypeScript, featuring a modern design, item management and an in-memory data store.',
         tags: ['TypeScript', 'CSS', 'HTML', 'Vite'],
         liveUrl: '#',
-        githubUrl: 'https://github.com/rarespoanta27'
+        githubUrl: 'https://github.com/rarespoanta27/Simple-Inventory-Management-System'
     },
     {
         id: 8,
@@ -66,7 +66,7 @@ const projectsData = [
         description: 'This UiPath project is designed to classify text sentiment (positive, negative, neutral) in order to analyze opinions and trends.',
         tags: ['UiPath', 'RPA', 'Sentiment Analysis'],
         liveUrl: '#',
-        githubUrl: 'https://github.com/rarespoanta27'
+        githubUrl: 'https://github.com/rarespoanta27/X-Sentiment-Analysis'
     },
     {
         id: 9,
@@ -74,7 +74,7 @@ const projectsData = [
         description: 'ClotheStore is a full-stack web application designed to provide a seamless online shopping experience. Users can browse, search, and view products, while administrators can manage products and users effortlessly.',
         tags: ['Full-Stack', 'E-commerce'],
         liveUrl: '#',
-        githubUrl: 'https://github.com/rarespoanta27'
+        githubUrl: 'https://github.com/rarespoanta27/ClotheStore'
     }
 ];
 

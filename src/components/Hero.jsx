@@ -19,7 +19,7 @@ const Hero = () => {
         'AI Practitioner',
         'Cloud Explorer',
         'Lifelong Learner',
-        'Data Architect in Training',
+        'Focused on Intelligent Control Systems',
         'Web Developer'
     ];
 
